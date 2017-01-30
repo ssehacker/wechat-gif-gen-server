@@ -1997,23 +1997,21 @@ require("source-map-support").install();
 	
 	router.get('/api/gen-images', function () {
 	  var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(ctx, next) {
-	    var body, type;
 	    return _regenerator2.default.wrap(function _callee2$(_context2) {
 	      while (1) {
 	        switch (_context2.prev = _context2.next) {
 	          case 0:
-	            body = undefined.request.body;
-	            type = body.type;
+	            // let body = this.request.body;
+	            // const type = body.type;
 	
-	
-	            console.log(body);
+	            // console.log(body);
 	
 	            (0, _imageGenner2.default)();
 	            ctx.body = {
 	              path: '/images/demo.gif'
 	            };
 	
-	          case 5:
+	          case 2:
 	          case 'end':
 	            return _context2.stop();
 	        }

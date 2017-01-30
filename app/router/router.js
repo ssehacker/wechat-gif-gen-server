@@ -12,10 +12,10 @@ router.get('/', async (ctx, next) =>{
 });
 
 router.get('/api/gen-images', async(ctx, next) => {
-  let body = this.request.body;
-  const type = body.type;
+  // let body = this.request.body;
+  // const type = body.type;
 
-  console.log(body);
+  // console.log(body);
 
   imageGenner();
   ctx.body = {
